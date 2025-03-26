@@ -2,6 +2,7 @@
 from urllib.parse import urljoin
 import scrapy
 from scrapy.http import Response
+from books_scrape.items import BooksScrapeItem
 
 
 class BooksSpider(scrapy.Spider):

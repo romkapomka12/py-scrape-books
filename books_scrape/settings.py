@@ -11,7 +11,9 @@ BOT_NAME = "books_scrape"
 
 SPIDER_MODULES = ["books_scrape.spiders"]
 NEWSPIDER_MODULE = "books_scrape.spiders"
-
+ITEM_PIPELINES = {
+    'books_scrape.pipelines.JsonWriterPipeline': 300,
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "books_scrape (+http://www.yourdomain.com)"
